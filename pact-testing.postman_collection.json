@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "0d6397d6-021d-4d82-942c-28445f064fc4",
+		"name": "pact-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/sign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"documentType\": \"Super Max Contract\",\n    \"firstName\": \"Lebron\",\n    \"lastName\": \"James\",\n    \"age\": 37,\n    \"position\": \"Power Forward\",\n    \"team\": \"LA Lakers\",\n    \"signed\": true,\n    \"dateSigned\": \"2022-10-14\",\n    \"duration\": \"5 years\",\n    \"salary\": \"158 million USD\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sign",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sign"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
